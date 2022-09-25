@@ -1,4 +1,10 @@
+import AllContent from "./AllContent";
 const HelloReact = () => {
-  return <h1>Hello React</h1>;
+  return (
+    <>
+      <div>{AllContent}</div>
+      <h1>Hello React</h1>
+    </>
+  );
 };
 export default HelloReact;

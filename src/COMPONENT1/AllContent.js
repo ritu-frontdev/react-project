@@ -22,7 +22,7 @@ export default function AllContent() {
           <Link to="/scientificcalculator">
             <li>Scientific Calculator</li>
           </Link>
-          <Link to="searchemoji">
+          <Link to="/searchemoji">
             <li>Search Emoji</li>
           </Link>
         </ul>

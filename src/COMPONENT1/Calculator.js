@@ -1,3 +1,4 @@
+import AllContent from "./AllContent";
 import { useState } from "react";
 
 const Calculator = () => {

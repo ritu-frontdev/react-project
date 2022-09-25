@@ -6,7 +6,7 @@ const Searchemoji = () => {
   const [search, setsearch] = useState("");
   const [result, setresult] = useState([]);
 
-  let data = require("./Search emoji.json");
+  let data = require("./Search_emoji.json");
   if (search.length > 0) {
     data.forEach((i) => {
       if (i.name.toLowerCase().includes(search.toLowerCase())) {

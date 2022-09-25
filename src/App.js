@@ -7,7 +7,7 @@ import Simplecounter from "./COMPONENT1/SimpleCounter";
 import Weather from "./COMPONENT1/Weather";
 import Calculator from "./COMPONENT1/Calculator";
 import Scientificcalculator from "./COMPONENT1/ScientificCalcy";
-import Searchemoji from "./COMPONENT1/Search emoji";
+import Searchemoji from "./COMPONENT1/Searchemoji";
 function App() {
   return (
     <>
@@ -22,7 +22,7 @@ function App() {
             path="/scientificcalculator"
             element={<Scientificcalculator />}
           />
-          <Route path="searchemoji" element={<Searchemoji />}></Route>
+          <Route path="/searchemoji" element={<Searchemoji />} />
         </Routes>
       </BrowserRouter>
     </>
