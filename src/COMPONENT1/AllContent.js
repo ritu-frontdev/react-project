@@ -25,7 +25,14 @@ export default function AllContent() {
           <Link to="/searchemoji">
             <li>Search Emoji</li>
           </Link>
-        </ul>
+
+          <Link to="/chatlogin">
+            <li>Chat App</li>
+          </Link>
+          <Link to ="Firstpage">
+          <li>News App</li>          
+          </Link>
+          </ul>
       </nav>
     </>
   );

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCopy } from "@fortawesome/fontawesome-free-solid";
 
@@ -60,8 +60,8 @@ const Searchemoji = () => {
       />
       <div>
         <ul>
-          {result.map((i) => (
-            <li onClick={(e) => myfunction(e)} key={i.toString()}>
+          {result.map((i, index) => (
+            <li onClick={(e) => myfunction(e)} key={index.toString()}>
               <a href="#">{i}</a>
             </li>
           ))}
