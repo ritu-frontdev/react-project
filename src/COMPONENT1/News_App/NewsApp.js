@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Card from "./Card";
 import ReactLoading from "react-loading";
 const NewsApp=()=>{
-    const[search, setsearch] = useState();
+    const[search, setsearch] = useState('india');
     const[newsdata, setnewsdata] = useState([])
     const[isloading, setloading] = useState(false)
 

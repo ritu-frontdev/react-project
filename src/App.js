@@ -21,10 +21,10 @@ function App() {
   return (
     <>
     {/* {location.pathname==="/react-project"&&<AllContent />} */}
-    <BrowserRouter>
+    <BrowserRouter basename="/react-project">
       <AllContent/>
         <Routes>
-          <Route path="/react-project" element={<Welcome />}/>
+          <Route exact path="/" element={<Welcome />}/>
           <Route path="/helloworld" element={<HelloReact />} />
           <Route path="/simplecounter" element={<Simplecounter />} />
           <Route path="/weather" element={<Weather />} />
