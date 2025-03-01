@@ -17,11 +17,12 @@ import NewsApp from "./COMPONENT1/News_App/NewsApp";
 import "./COMPONENT1/News_App/FirstPage.css";
 
 function App() {
-  const location = useLocation()
+  // const location = useLocation()
   return (
     <>
-    {location.pathname==="/react-project"&&<AllContent />}
-          
+    {/* {location.pathname==="/react-project"&&<AllContent />} */}
+    <BrowserRouter>
+      <AllContent/>
         <Routes>
           <Route path="/react-project" element={<Welcome />}/>
           <Route path="/helloworld" element={<HelloReact />} />
@@ -37,17 +38,18 @@ function App() {
           <Route path='/NewsApp' element={<NewsApp/>}/>
           
         </Routes>
+        </BrowserRouter>
     </>
   );
   
 }
+export default App;
 
-
-export default function Root(){
-return(
-  <BrowserRouter>
+// export default function Root(){
+// return(
+//   <BrowserRouter>
   
-  <App/>
-  </BrowserRouter>
-)
-}
+//   <App/>
+//   </BrowserRouter>
+// )
+// }
